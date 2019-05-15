@@ -1,0 +1,22 @@
+	ATTENDENCE SHEET
+	----------------
+
+
+date4\10\2018
+
+Batch Code and Departmental Code : 1
+Subject Code : 0607
+CLASS NO : 1
+
+ROLL NO			ATTENDENCE
+
+1001			present
+1002			present
+1003			present
+1004			present
+1005			present
+1006			absent
+1007			absent
+1008			present
+1009			present
+1010			present

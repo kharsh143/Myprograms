@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<conio.h>
+#include<graphics.h>
+  void 	 drawchakra (int x,int y,int st,int sy,int rd);
+
+void main()
+{
+   int gd=DETECT,gm,i;
+  // int a[10],b[10],c[10];
+
+     int  a[10]={50,50,100,50,100,100,50,100,50,50};
+     int   b[10]={50,100,100,100,100,200,50,200,50,100};
+     int  c[10]={50,200,100,200,100,300,50,300,50,200};
+      initgraph(&gd,&gm,"\\TurboC3\\BGI");
+
+	 fillpoly(RED/2-1,a);
+	 fillpoly(WHITE,b);
+	 fillpoly(GREEN,c);
+	 drawchakra(100,75,0,15,90);
+	  getch();
+	  closegraph();
+
+}
+  void 	 drawchakra (int x,int y,int st,int sy,int rd)
+  {
+  int i;
+  i=0;
+  for(i=0;i<25;i++)
+  {
+    pieslice(x,y,st,sy,rd);
+    st +=15;
+    sy +=15;
+  }
+
+  }

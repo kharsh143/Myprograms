@@ -1,0 +1,92 @@
+	ATTENDENCE SHEET
+	----------------
+
+
+date19\5\2018
+
+Batch Code and Departmental Code : 1
+Subject Code : data
+CLASS NO : 10
+
+ROLL NO			ATTENDENCE
+
+1001			present
+1002			present
+1003			present
+1004			present
+1005			present
+1006			absent
+1007			present
+1008			present
+1009			present
+1010			present
+1011			present
+1012			present
+1013			present
+1014			absent
+1015			present
+1016			absent
+1017			present
+1018			present
+1019			present
+1020			present
+1021			present
+1022			present
+1023			present
+1024			present
+1025			present
+1026			present
+1027			present
+1028			absent
+1029			present
+1030			present
+1031			present
+1032			present
+1033			present
+1034			present
+1035			present
+1036			present
+1037			present
+1038			present
+1039			present
+1040			present
+1041			present
+1042			present
+1043			absent
+1044			absent
+1045			absent
+1046			present
+1047			absent
+1048			present
+1049			absent
+1050			present
+1051			absent
+1052			present
+1053			absent
+1054			present
+1055			absent
+1056			present
+1057			absent
+1058			present
+1059			absent
+1060			present
+1061			absent
+1062			present
+1063			present
+1064			present
+1065			present
+1066			present
+1067			present
+1068			present
+1069			present
+1070			present
+1071			present
+1072			present
+1073			present
+1074			present
+1075			present
+1076			present
+1077			present
+1078			present
+1079			present
+1080			present

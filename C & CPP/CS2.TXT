@@ -1,0 +1,13 @@
+	ATTENDENCE SHEET
+	----------------
+
+
+date19\5\2018
+
+Batch Code and Departmental Code : 4
+Subject Code : cs
+CLASS NO : 2
+
+ROLL NO			ATTENDENCE
+
+4001			present

@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int units;
+float amt;
+clrscr();
+printf("enter consumption units: ");
+scanf("%d",&units);
+  if(units>=0 && units<=200)
+  {
+  amt=units*0.50;
+  printf("the total billing is %f",amt);
+  }
+  else
+  if (units>=201 && units <=400)
+  {
+  amt=100+(units-200)*0.65;
+  printf("the total billing amount is %f",amt);
+  }
+  else
+  if(units>=401 && units <=600)
+  {
+  amt=230+(units-400)*0.85;
+  printf("the total billing amount is %f",amt);
+  }
+  else
+  {
+  amt=390+(units-600)*1.00;
+  printf("the total billing amount is %f",amt);
+  }
+getch();
+}

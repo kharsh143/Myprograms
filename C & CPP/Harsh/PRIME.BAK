@@ -1,0 +1,28 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+int i,j,count,n;
+clrscr();
+cout<<"Enter The Number";
+cin>>n;
+
+	   for(i=1;i<=n;i++)
+	   {
+	      if(n%i==0)
+	      {
+	       count++;
+	      }
+
+	   }
+	   if(count==2)
+	   {
+	    cout<<"Prime";
+	   }
+	   else
+	   {
+	   cout<<"Not Prime";
+	   }
+
+getch();
+}

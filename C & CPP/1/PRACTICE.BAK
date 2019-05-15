@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+
+	struct kingtreasure
+	{
+	long int goldlooted;
+	long int lootedhouses;
+	};
+	struct people
+	{
+	long int goldpeople;
+	long int islooted;
+	long int isissuegold;
+	};
+	struct houses
+	{
+	long int house;
+	long int goldinhouse;
+	};
+
+void main()
+{
+
+  struct  houses h;
+  clrscr();
+  printf("%d",&h.house);
+  getch();
+}

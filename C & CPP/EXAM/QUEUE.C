@@ -1,0 +1,81 @@
+#include<stdio.h>
+#include<conio.h>
+#define size 5
+int  queue[size];
+int front=0,rear=0;
+void enqueue();
+void dequeue();
+void display();
+
+void main()
+{
+   int ch;
+   clrscr();
+   while(1)
+   {
+     printf("\nEnter The Your Choice\n1.Enqueue\n2.Dequeue\n3.Display\n4.Exit");
+     scanf("%d",&ch);
+	switch(ch)
+	{
+	  case 1:enqueue();
+	  break;
+	  case 2:dequeue();
+	  break;
+	  case 3:display();
+	  break;
+	  case 4:exit(0);
+	  break;
+	  default:printf("Entered Value Is Not Valid");
+
+	}
+
+   }
+
+}
+void enqueue()
+{
+  int item;
+  if(rear==size)
+  {
+   printf("Queue Is Full");
+  }
+  else
+  {
+    printf("Enter The Number");
+    scanf("%d",&item);
+    queue[rear]=item;
+    rear++;
+    printf("%d Is Pushed",item);
+  }
+
+}
+void dequeue()
+{
+  if(front==rear)
+  {
+    printf("Queue Is Empty");
+  }
+  else
+  {
+    printf("%d Is Popped",queue[front]);
+    front++;
+
+  }
+
+}
+void display()
+{
+ int i;
+  if(front==rear)
+  {
+  printf("Queue Is Empty");
+  }
+  else
+  {
+    for(i=front;i<size;i++)
+    {
+      printf("%d\n",queue[i]);
+    }
+  }
+
+}

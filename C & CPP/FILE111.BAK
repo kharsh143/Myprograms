@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+FILE *fp;
+char name[10];
+int r;
+fp=fopen("timepass.txt","w");
+printf("name & roll");
+scanf("%s%d",name,r);
+fprintf(fp,"%s%d",name,r);
+getch();
+}

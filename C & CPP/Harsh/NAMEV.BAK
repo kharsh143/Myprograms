@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+   char name[50];
+   int i,len,check=0;
+   printf("Enter The Name\n");
+   scanf("%s",name);
+     len=strlen(name);
+	for(i=0;i<len;i++)
+	{
+	   if(name[i]>47||name[i]<=57)
+	   {
+	   check++;
+	      printf("Please Enter Valid Name");
+	      printf("Do not Enter Numbers");
+	   }
+	}
+	if(check==0)
+	{
+	printf("You Entered Valid Name\n%s",name);
+	}
+
+
+   getch();
+}

@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int num,sum=0,r;
+clrscr();
+printf("Enter The Numbers");
+scanf("%d",&num);
+
+       while(num>0)
+       {
+	 r=num%10;
+	 sum=sum+r;
+	 num=num/10;
+       }
+       printf("The Face Value Is %d",sum);
+getch();
+}

@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+#define pf printf
+#define sf scanf
+void main()
+{
+int amount[]={1000,500,100,50,20,10,5,2,1};
+long int drawn;
+int i,r;
+clrscr();
+pf("enter the amount");
+
+sf("%ld",&drawn);
+i=0;
+ while(drawn>0)
+ {
+ r=drawn/amount[i];
+ drawn=drawn%amount[i];
+ printf("the notes of %d Rupees %d\n",amount,r);
+ i++;
+ }
+getch();
+}

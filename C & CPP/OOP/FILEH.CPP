@@ -1,0 +1,26 @@
+#include<iostream.h>
+#include<conio.h>
+#include<fstream.h>
+void main()
+{
+  char name[20];
+  int roll;
+clrscr();
+  ofstream fout("cppfile.txt");
+  cout<<"Enter The Name";
+  cin>>name;
+//  cout<<name;
+//  fout<<"Hello This Is Harsh .............!!!!!!!!!!!!"<<endl;
+//  fout<<"This File Handling";
+fout<<name;
+
+    fout.close();
+  ifstream fin("cppfile.txt");
+  fin>>name;
+
+  cout<<"Name ="<<name<<endl;
+
+  fin.close();
+getch();
+
+}

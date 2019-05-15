@@ -1,0 +1,4 @@
+void count()
+{
+ int count=1;
+}

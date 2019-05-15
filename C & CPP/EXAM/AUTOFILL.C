@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i,j,k,l;
+clrscr();
+  for(i=0;i<=20;i++)
+  {
+     for(j=0;j<=20;j++)
+     {
+       for(k=0;k<=20;k++)
+       {
+	 for(l=0;l<=20;l++)
+	 {
+	    if(i+j==8&&i+k==13&&k-l==5&&j+l==8)
+	    {
+	       printf("%d%d%d%d",i,j,k,l);
+	    }
+	  }
+       }
+     }
+  }
+
+getch();
+}

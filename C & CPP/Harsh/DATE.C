@@ -1,0 +1,78 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+  int d1,m1,y1,d2,m2,y2,temp,m11,m22,temp_month,into;
+  int days,month,year,total_days,leap,ty,tm,temp1;
+  clrscr();
+  printf("Enter The Date");
+  scanf("%d",&d1);
+  printf("Enter Month");
+  scanf("%d",&m1);
+  printf("Enter Year");
+  scanf("%d",&y1);
+  printf("Enter The Date");
+  scanf("%d",&d2);
+  printf("Enter Month");
+  scanf("%d",&m2);
+  printf("Enter Year");
+  scanf("%d",&y2);
+
+    if(d1>d2)
+    {
+      days=d1-d2;
+    }
+    else
+    {
+     days=d2-d1;
+    }
+    if(m1>m2)
+    {
+     month=m1-m2;
+    }
+    else
+    {
+     month=m2-m1;
+    }
+    //for same year
+    if(y1==y2)
+    {
+     if(y1%4==0)
+     {
+     if(m1==2||m2==2)
+     {
+    temp1=days+(month*30);
+    printf("Total Days=%d",temp1);
+     }
+     else
+     if(m1!=m2)
+     {
+     temp_month=days+(month*30);
+     into=temp_month-1;
+     printf("Total Days=%d",into);
+     }
+     }
+     else
+     {
+     temp_month=days+(month*30);
+     into=temp_month-2;
+     printf("Total Days=%d",into);
+     }
+
+   }
+
+    else
+    {
+    year=y2-y1;
+    leap=year/4;
+    tm=month*30;
+    ty=year*365;
+    temp=tm+days;
+    total_days=(ty-temp);
+    printf("Total Days=%d",total_days+leap);
+    }
+    getch();
+
+}
+
+

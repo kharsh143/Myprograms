@@ -1,0 +1,4 @@
+void count()
+{
+ printf("S");
+}

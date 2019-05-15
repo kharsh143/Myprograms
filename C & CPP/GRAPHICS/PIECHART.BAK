@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<conio.h>
+#include<graphics.h>
+void main ()
+{
+   int gd=DETECT,gm,x,y;
+   initgraph(&gd,&gm,"\\TurboC3\\BGI");
+   outtextxy(200,10,"PIE CHART");
+      x=getmaxx()/2;
+      y=getmaxy()/2;
+
+      setfillstyle(SOLID_FILL,4);
+      pieslice(x,y,0,60,120);
+      outtextxy(x+140,y-70,"FOOD");
+      getch();
+
+
+      setfillstyle(SOLID_FILL,3);
+      pieslice(x,y,60,160,120);
+      outtextxy(x-30,y-180,"RENT");
+      getch();
+
+
+      setfillstyle(SOLID_FILL,5);
+      pieslice(x,y,160,220,120);
+      outtextxy(x-200,y,"Electric");
+      getch();
+
+      setfillstyle(SOLID_FILL,6);
+      pieslice(x,y,220,360,120);
+      outtextxy(x,y+170,"Saving");
+      getch();
+      closegraph();
+
+}

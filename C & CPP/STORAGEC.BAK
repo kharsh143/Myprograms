@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+void fn();
+void main()
+{
+auto int i;
+clrscr();
+ printf("%d",i);
+ fn();
+ fn();
+ fn();
+getch();
+}
+void fn()
+{
+static int j=10;
+printf("\n j=%d",j);
+j=j+1;
+}

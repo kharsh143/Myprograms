@@ -1,0 +1,13 @@
+void encrypyt()
+{
+  int p1,p2,display;
+  char message[20];
+  printf("Enter Two Prime Numbers\nWhere Both Should Not Be Same:\n");
+  scanf("%d%d",&p1,&p2);
+
+  printf("Enter The Message U Want To Send");
+  scanf("%s",message);
+  return(p1*p2);
+  display:printf("%s",message);
+
+}
