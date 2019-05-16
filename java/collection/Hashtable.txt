@@ -1,0 +1,8 @@
+Java Hashtable class implements a hashtable, which maps keys to values. It inherits Dictionary class and implements the Map interface.
+
+The important points about Java Hashtable class are:
+
+A Hashtable is an array of list. Each list is known as a bucket. The position of bucket is identified by calling the hashcode() method. A Hashtable contains values based on the key.
+It contains only unique elements.
+It may have not have any null key or value.
+It is synchronized.

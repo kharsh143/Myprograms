@@ -1,0 +1,44 @@
+
+//returns object
+class rectangle
+{
+int len;
+int bredth;
+rectangle(int l,int b)
+{
+len=l;
+bredth=b;
+}
+rectangle getobj()
+{
+rectangle rect=new rectangle(10,20);
+return rect;
+}
+}
+class fun
+{
+public static void main(String arg[])
+{
+rectangle ob1=new rectangle(40,50);
+rectangle ob2;
+ob2=ob1.getobj();
+System.out.println("Length="+ob1.len);
+System.out.println("Breadth="+ob1.bredth);
+
+System.out.println("Length="+ob2.len);
+System.out.println("Breadth="+ob2.bredth);
+
+}
+}
+
+/*
+OUTPUT
+E:\java\Assignements>javac fun.java
+
+E:\java\Assignements>java fun
+Length=40
+Breadth=50
+Length=10
+Breadth=20
+
+*/
