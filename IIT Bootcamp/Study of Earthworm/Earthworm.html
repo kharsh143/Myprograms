@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Earthworm div check</title>
+    <link href="css/index.css" rel="stylesheet" />
+    
+</head>
+
+<body>
+    <div class="ertImg">
+        <img src="images/orgert.gif" alt="">
+    </div>
+    <div>
+        <img src="images/tags/1ertinanmkngdm.gif" style="display:none;" id="tag1" class="imgtag" alt="Earthworm tag" />
+        <img src="images/tags/2help.gif" style="display:none;" id="tag2" class="imgtag" alt="Earthworm tag" />
+        <img src="images/tags/3drgdrpto.gif" style="display:none;" id="tag3" class="imgtag" alt="Earthworm tag" />
+        <img src="images/tags/4clasify.gif" style="display:none;" id="tag4" class="imgtag" alt="Earthworm tag" />
+        <img src="images/tags/5salftrs.gif" style="display:none;" id="tag5" class="imgtag" alt="Earthworm tag" />
+        <img src="images/tags/6dblclcksltftrs.gif" style="display:none;" id="tag6" class="imgtag" alt="Earthworm tag" />
+        <img src="images/tags/7dgrdrpsltftrs.gif" style="display:none;" id="tag7" class="imgtag" alt="Earthworm tag" />
+        <img src="images/tags/8zlnm.gif" style="display:none;" id="tag8" class="imgtag" alt="Earthworm tag" />
+        <img src="images/tags/9prformance.gif" style="display:none;" id="tag9" class="imgtag" alt="Earthworm tag" />
+    </div>
+
+    <div>
+        <div id="help_btns" style="display:none;">
+            <input type="button" onclick="alert('kingdom - phylum - class - order - genus - species')" class="yes"
+                value="yes" />
+            <input type="button" class="yes" value="no" />
+        </div>
+        <div id="help_btns2" style="display:none;">
+            <input type="button" onclick="alert('Kingdom : Animalia\nPhylum : Annelida\nClass : Oligochaeta\nOrder : Opisthopora\nGenus : Pheretima\nSpecies : posthuma\n');"
+                class="yes" id="btnYes1" value="yes" />
+            <input type="button" id="btnNo1" class="yes" value="no" />
+        </div>
+        <div id="help_btns3" style="display:none;">
+            <input type="button" onclick="displayOptn3()" class="yes" value="yes" />
+            <input type="button" class="yes" value="no" onclick="noSalftrHlp()" />
+        </div>
+    </div>
+
+    <div>
+        <img src="images/ertdwn.gif" style="display: none;" id="pointer1" class="imgPointer" alt="Earthworm down Animation" />
+        <img src="images/erttmbup.gif" style="display: none;" id="pointer2" class="imgPointer" alt="Earthworm up Animation" />
+        <img src="images/ertreading.gif" style="display: none;" id="pointer3" class="imgPointer" alt="Earthworm read Animation" />
+        <img src="images/ertpointer.gif" style="display: none;" id="pointer4" class="imgPointer" alt="Earthworm point Animation" />
+    </div>
+
+    <div id="lastDiv" style="display:none;">
+        <center>
+            <h3 id="h">Performance</h3>
+        </center>
+        <h2>Test Score : <span id="spnScore"></span>/10</h2><br>
+        <h2>Performance : </h2>
+        <div class="row" style="width:300px; border:1px solid black;">
+            <div id="c1" class="col-sm-3" style="border:1px solid blue;height:30px;"></div>
+        </div>
+        <img STYLE="position:absolute; TOP:95px; LEFT:380px; WIDTH:225px; HEIGHT:225px" SRC="images/10.gif">
+
+        <img STYLE="position:absolute; TOP:141px; LEFT:600px; WIDTH:300px; HEIGHT:300px" SRC="images/2.gif">
+        <br>
+        <br>
+        <center> <br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br>
+            <input type="button" id="b1" onclick="exitClick();" value="Exit"></center>
+
+    </div>
+
+    <div id="start">
+        <center>
+            <h3 id="h">Taxanomical Classification of Earthworm</h3>
+        </center>
+        <IMG STYLE="position:absolute; TOP:100px; LEFT:380px; WIDTH:225px; HEIGHT:225px" SRC="images/1.gif">
+        <IMG STYLE="position:absolute; TOP:200px; LEFT:600px; WIDTH:350px; HEIGHT:330px" SRC="images/2.gif">
+        <center style="margin-top:60px;"><br><br><br><br> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="button" onclick="startClick();" class="reset" id="b1" value="Start The Experiment">
+        </center>
+    </div>
+
+    <!-- Name Div -->
+    <div id="end" style="display:none;">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <center>
+            <IMG STYLE="position:absolute; TOP:50px; LEFT:380px; WIDTH:225px; HEIGHT:225px" SRC="images/3.gif">
+            <IMG STYLE="position:absolute; TOP:100px; LEFT:600px; WIDTH:350px; HEIGHT:330px" SRC="images/2.gif">
+            <b>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <input type="text" id="TextArea"><br />
+                <br />
+                &nbsp;<input type="button" value="B" onclick="boldText()">
+                <input type="button" id="b2" value="I" onclick="italicText()">
+                <input type="button" id="b3" value="U" onclick="underlineText()">
+            </b>
+            <br />
+
+            <input type="button" id="b4" value="Submit" onclick="checkspell()">
+
+        </center>
+    </div>
+
+    <!-- Que Div -->
+    <div id="que" style="display:none; padding: 0 50px;">
+        <b>
+            <center>
+                <h1>Assessment</h1>
+            </center>
+        </b>
+        <br>
+        <hr>
+        <br>
+        1)Which of the following is correct taxonomical order for classification of animals?
+        <br>
+        <div>
+            <p>
+                a)<lable><input type="radio" class="option1" onchange="check1Ans(this);" value="11" name="q1">Kingdom-Phylum-Class-Order-Genus-Species</lable>
+                <br>
+                b)<lable><input type="radio" class="option1" onchange="check1Ans(this);" value="12" name="q1"> Kingdom-
+                    Class - Phylum -Order-Genus-Species</lable><br>
+                c)<lable><input type="radio" class="option1" onchange="check1Ans(this);" value="13" name="q1">
+                    Kingdom-Phylum-Class- Genus - Order -Species</lable><br>
+                d)<lable><input type="radio" class="option1" onchange="check1Ans(this);" value="14" name="q1">
+                    Kingdom-Phylum- Genus -Order- Class –Species</lable><br>
+            </p>
+        </div>
+        <br>
+        2)To which Phylum does the earthworm belongs?<br>
+        <p>
+            <div>
+                a)<input type="radio" class="option2" onchange="check2Ans(this);" value="21" name="q2">Arthropoda <br>
+                b)<input type="radio" class="option2" onchange="check2Ans(this);" value="22" name="q2">Annelida<br>
+                c)<input type="radio" class="option2" onchange="check2Ans(this);" value="23" name="q2">Echinodermata<br>
+                d)<input type="radio" class="option2" onchange="check2Ans(this);" value="24" name="q2">Coelenterate <br>
+            </div>
+        </p><br>
+
+        3)Identify the correct zoological name of earthworm?<br>
+        <p>
+            <div>
+                a)<input type="radio" class="option3" onchange="check3Ans(this);" value="31" name="q3">Pheritima
+                posthuma<br>
+                b)<i><input type="radio" class="option3" onchange="check3Ans(this);" value="32" name="q3">Pheritima
+                    posthuma</i><br>
+                c)<input type="radio" class="option3" onchange="check3Ans(this);" value="33" name="q3">Pheritima
+                Posthuma <br>
+                d)<input type="radio" class="option3" onchange="check3Ans(this);" value="34" name="q3">posthuma
+                Pheritima <br>
+            </div>
+        </p><br>
+
+        4)Which is the most important feature of phylum annelid?<br>
+        <p>
+            <div>
+                a)<input type="radio" class="option4" value="41" onchange="check4Ans(this);" name="q4">Body is
+                metamerically segmented<br>
+                b)<input type="radio" class="option4" value="42" onchange="check4Ans(this);" name="q4">Presence of
+                prostomium<br>
+                c)<input type="radio" class="option4" value="43" onchange="check4Ans(this);" name="q4">Complete
+                digestive system<br>
+                d)<input type="radio" class="option4" value="44" onchange="check4Ans(this);" name="q4">Closed
+                circulatory system<br>
+            </div>
+        </p><br>
+
+        5)Earthworm is categorized in class oligochaeta due to<br>
+        <p>
+            <div>
+                a)<input type="radio" class="option5" value="51" name="q5" onchange="check5Ans(this);">large number of
+                nephridio pores<br>
+                b)<input type="radio" class="option5" value="52" name="q5" onchange="check5Ans(this);">few number of
+                setae <br>
+                c)<input type="radio" class="option5" value="53" name="q5" onchange="check5Ans(this);">presence of
+                prostomium <br>
+                d)<input type="radio" class="option5" value="54" name="q5" onchange="check5Ans(this);">Locomotary
+                organs
+                are absent <br>
+            </div>
+        </p>
+
+        </p><br>
+
+        6)Where setae are present?<br>
+        <p>
+            <div>
+                a)<input type="radio" class="option6" value="61" name="q6" onchange="check6Ans(this);">On the surface
+                of
+                skin<br>
+                b)<input type="radio" class="option6" value="62" name="q6" onchange="check6Ans(this);">Clitellar region
+                <br>
+                c)<input type="radio" class="option6" value="63" name="q6" onchange="check6Ans(this);">On prostomium
+                <br>
+                d)<input type="radio" class="option6" value="64" name="q6" onchange="check6Ans(this);">Within body
+                coelom <br>
+
+            </div>
+        </p><br>
+
+        7)Which of the following taxonomical category specifically tells about the individual organism ?<br>
+        <p>
+            <div>
+                a)<input type="radio" class="option6" value="71" name="q7" onchange="check7Ans(this);">Kingdom
+                <br>
+                b)<input type="radio" class="option6" value="72" name="q7" onchange="check7Ans(this);">Class
+                <br>
+                c)<input type="radio" class="option6" value="73" name="q7" onchange="check7Ans(this);">Phylum
+                <br>
+                d)<input type="radio" class="option6" value="74" name="q7" onchange="check7Ans(this);">Species
+                <br>
+
+            </div>
+        </p><br>
+
+        8)Which of the following is correct about clitellum ?<br>
+        <p>
+            <div>
+                a)<input type="radio" class="option6" value="81" name="q8" onchange="check8Ans(this);">It is made of non glandular cells<br>
+                b)<input type="radio" class="option6" value="82" name="q8" onchange="check8Ans(this);">It liberates gametes
+                <br>
+                c)<input type="radio" class="option6" value="83" name="q8" onchange="check8Ans(this);">) It is made of glandular, secretory cells
+                <br>
+                d)<input type="radio" class="option6" value="84" name="q8" onchange="check8Ans(this);">It is exactly present in middle part of body <br>
+            </div>
+        </p><br>
+
+        9)Which of the following is NOT correct about prostomium ?<br>
+        <p>
+            <div>
+                a)<input type="radio" class="option6" value="91" name="q9" onchange="check9Ans(this);">It is a fleshy lobe<br>
+                b)<input type="radio" class="option6" value="92" name="q9" onchange="check9Ans(this);">It is not a complete circle
+                <br>
+                c)<input type="radio" class="option6" value="93" name="q9" onchange="check9Ans(this);">It posses setae
+                <br>
+                d)<input type="radio" class="option6" value="94" name="q9" onchange="check9Ans(this);">It covers opening of mouth<br>
+
+            </div>
+        </p><br>
+
+        10)Germinal Zone is present at ?<br>
+        <p>
+            <div>
+                a)<input type="radio" class="option6" value="101" name="q10" onchange="check10Ans(this);">Prostomium<br>
+                b)<input type="radio" class="option6" value="102" name="q10" onchange="check10Ans(this);">Clitellum
+                <br>
+                c)<input type="radio" class="option6" value="103" name="q10" onchange="check10Ans(this);">Middle metameres
+                <br>
+                d)<input type="radio" class="option6" value="104" name="q10" onchange="check10Ans(this);">Pygidium<br>
+
+            </div>
+        </p><br>
+
+        <!-- <input type="button" onclick="chkTotal()" value="Submit">-->
+        <p id="show"></p>
+        <input type="button" class="calc" onclick="endClick1();" value="Submit" />
+    </div>
+
+    <!-- Div First -->
+    <div id="divFirst" style="display:none;">
+        <div class="chances" style="position:absolute;top:60%;left:90%;">
+            <h3>Chances :<span id="spnChance2">1</span>/4</h3>
+        </div>
+
+        <h2 class="cntr">Taxonomical classification of Earthworm</h2>
+
+        <div style="width:10%; float:left;">
+            <table style="border-collapse: collapse;">
+                <tr>
+                    <td>
+                        <h4 style="text-align:center; border:1px solid; margin:0 5px; padding:0 30px;">Taxonomical
+                            Order</h4>
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <table style="width:208px;">
+                <tr>
+                    <td>
+                        <div class="holder dropzone" style="padding:0;">
+                            <table id="divDrpzAns" style="width:100%; height:100%; border-collapse: collapse; border:1px solid;">
+                                <tr>
+                                    <td style="border:2px solid; height:50px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border:2px solid; height:50px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border:2px solid; height:50px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border:2px solid; height:50px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border:2px solid; height:50px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border:2px solid; height:50px;"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <form action="" method="POST">
+            <div class="full" style="width:86%; float:right;">
+                <div class="choices" style="margin-top:120px;">
+                    <!-- div.container -->
+                    <div class="container">
+                        <div class="holder holder2">
+                            <div class="box" data-order="1" style="background-color: #e8554e;" data-id="0" draggable="true">
+                                Kingdom </div>
+                            <div class="box" data-order="4" style="background-color: #f19c65;" data-id="5" draggable="true">
+                                Order </div>
+                            <div class="box" data-order="6" style="background-color: #ffd265;" data-id="4" draggable="true">
+                                species </div>
+                            <div class="box" data-order="2" style="background-color: #0a7b83;" data-id="1" draggable="true">
+                                Phylum</div>
+                            <div class="box" data-order="5" style="background-color: #2aa876;" data-id="3" draggable="true">
+                                Genus </div>
+                            <div class="box" data-order="3" style="background-color: #7e621d;" data-id="2" draggable="true">
+                                Class </div>
+                        </div>
+                    </div>
+                    <!-- // div.container -->
+                </div>
+            </div>
+            <div style="text-align:center;">
+                <button type="submit" class="reset_btn">reset</button>
+                <!-- <input type="button" value="reset" class="reset_btn" onclick="reset();" /> -->
+                <input type="button" style="margin-right:20px;" onclick="checkFirst(this);" class="btnSubmit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <!-- //Div First End -->
+
+    <!-- Div Second -->
+    <div id="divSecond" style="display:none;">
+        <div class="chances" style="position:absolute;top:60%;left:90%;">
+            <h3>Chances :<span id="spnChance1">1</span>/4</h3>
+        </div>
+        <h2 class="cntr">Taxonomical classification of Earthworm</h2>
+        <div style="width:10%; float:left;">
+            <table style="border-collapse: collapse;">
+                <tr>
+                    <td>
+                        <h4 style="text-align:center; border:1px solid; margin:0 25px; padding:0 30px;">Taxonomical
+                            Order</h4>
+                    </td>
+                    <td>
+                        <h4 style="text-align:center; border:1px solid; margin:0 38px; padding:0 30px;">Systemic
+                            <br>Position</h4>
+                    </td>
+                </tr>
+            </table>
+            <br />
+
+            <table>
+                <tr>
+                    <td style="height:468px;">
+                        <!-- Pre Defined Component of Species -->
+                        <div class="holder dropzone" style="padding:0;width:208px !important;height:100%;">
+                            <table id="" style="height:100%;width:100%; border-collapse: collapse; border:1px solid;">
+
+                                <tr>
+                                    <td style="border:2px solid; height:50px;">
+                                        <div class="box" data-order="1" style="background-color: #e8554e;" data-id="6"
+                                            draggable="true">
+                                            Kingdom
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border:2px solid; height:50px;">
+                                        <div class="box" data-order="2" style="background-color: #0a7b83;" data-id="7"
+                                            draggable="true">
+                                            Phylum
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border:2px solid; height:50px;">
+                                        <div class="box" data-order="3" style="background-color: #7e621d;" data-id="8"
+                                            draggable="true">
+                                            Class
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border:2px solid; height:50px;">
+                                        <div class="box" data-order="4" style="background-color: #f19c65;" data-id="9"
+                                            draggable="true">
+                                            Order
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border:2px solid; height:50px;">
+                                        <div class="box" data-order="5" style="background-color: #2aa876;" data-id="10"
+                                            draggable="true">
+                                            Genus
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border:2px solid; height:50px;">
+                                        <div class="box" data-order="6" style="background-color: #ffd265;" data-id="11"
+                                            draggable="true">
+                                            Species
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+
+                        <div class="holder dropzone" style="padding:0;width:208px !important; height:90% !important;">
+                            <table id="divSecondDropz" style="height:100%;width:100%; border-collapse: collapse; border:1px solid;">
+
+                                <tr>
+                                    <td style="border:2px solid; text-align: center; height:30px;">
+                                        <input type="text" class="txt2">
+                                        <span></span>
+                                        <span></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border:2px solid; text-align: center; height:30px;">
+                                        <input type="text" class="txt2">
+                                        <span></span>
+                                        <span></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border:2px solid; text-align: center; height:30px;">
+                                        <input type="text" class="txt2">
+                                        <span></span>
+                                        <span></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border:2px solid; text-align: center; height:30px;">
+                                        <input type="text" class="txt2">
+                                        <span></span>
+                                        <span></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border:2px solid;  text-align: center; height:30px;">
+                                        <input type="text" class="txt2">
+                                        <span></span>
+                                        <span></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border:2px solid;text-align: center; height:30px;">
+                                        <input type="text" style="text-transform: lowercase;" class="txt2">
+                                        <span></span>
+                                        <span></span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="full" style="width:80%; float:right;">
+            <!-- <table style="border-collapse: collapse;">
+                <tr>
+                    <td>
+                        <h4 style="text-align:center; border:1px solid; margin:0 0px; padding:0 60px;">
+                            Systemic<br>Position</h4>
+                    </td>
+                </tr>
+            </table> -->
+            <div class="choices" style="margin-top:180px;margin-left:300px; width:auto;">
+                <div class="container">
+
+                </div>
+            </div>
+            <div style="text-align:center;">
+                <input type="button" style="margin-right:20px;" onclick="checkSecond(this);" class="btnSubmit" value="Submit">
+            </div>
+        </div>
+    </div>
+    <!-- Div Second -->
+
+    <!-- Div Third -->
+    <div id="divFinal" style="display:none;">
+        <h2 class="cntr">Taxonomical classification of Earthworm</h2>
+        <div style="width:10%; float:left;">
+            <!-- <table style="border-collapse: collapse;">
+            <tr>
+                <td>
+                    <h4 style="text-align:center; border:1px solid; margin:0 5px; padding:0 30px;">Taxonomical Order</h4>
+                </td>
+            </tr>
+        </table>
+        <br /> -->
+            <div class="yesno" id="yesno">
+                <input type="button" value="yes" onclick="yes()">
+                <input type="button" value="no" onclick="no()">
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        <h4 style="text-align:center; border:1px solid; margin:0 13px; margin-bottom:0px; padding:0 50px;">
+                            Taxonomical <br> Order</h4>
+                    </td>
+                    <td>
+                        <h4 style="text-align:center; border:1px solid; margin:0 30px; margin-bottom:0px; padding:0 50px;">
+                            System <br> Position</h4>
+                    </td>
+                    <td>
+                        <h4 style="text-align:center; border:1px solid; margin:0 10px; margin-bottom:0px; padding:0 50px;">
+                            Salient <br> Features</h4>
+                    </td>
+                </tr>
+            </table>
+            <table style="width:168px; position: static;">
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td style="height:468px;">
+                                    <!-- Pre Defined Component of Species -->
+                                    <div class="holder dropzone" style="padding:0;width:208px !important;height:100%;">
+                                        <table id="" style="height:100%;width:100%; border-collapse: collapse; border:1px solid;">
+
+                                            <tr>
+                                                <td style="border:2px solid; height:50px;">
+                                                    <div class="box" data-order="1" style="background-color: #e8554e;"
+                                                        data-id="6" draggable="true">
+                                                        Kingdom
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border:2px solid; height:50px;">
+                                                    <div class="box" data-order="2" style="background-color: #0a7b83;"
+                                                        data-id="7" draggable="true">
+                                                        Phylum
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border:2px solid; height:50px;">
+                                                    <div class="box" data-order="4" style="background-color: #f19c65;"
+                                                        data-id="8" draggable="true">
+                                                        Class
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border:2px solid; height:50px;">
+                                                    <div class="box" data-order="4" style="background-color: #f19c65;"
+                                                        data-id="9" draggable="true">
+                                                        Order
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border:2px solid; height:50px;">
+                                                    <div class="box" data-order="5" style="background-color: #2aa876;"
+                                                        data-id="10" draggable="true">
+                                                        Genus
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border:2px solid; height:50px;">
+                                                    <div class="box" data-order="3" style="background-color: #7e621d;"
+                                                        data-id="11" draggable="true">
+                                                        Class
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td style="height:468px;">
+                                    <!-- Pre Defined Component of Species -->
+                                    <div class="holder dropzone" style="padding:0;width:208px !important;height:100%;">
+                                        <table id="" style="height:100%;width:100%; border-collapse: collapse; border:1px solid;">
+
+                                            <tr>
+                                                <td style="border:2px solid; text-align: center; height:50px;">
+                                                    <label class="txt2 lbl2"></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border:2px solid; text-align: center;height:50px;">
+                                                    <label class="txt2 lbl2"></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border:2px solid; text-align: center; height:50px;">
+                                                    <label class="txt2 lbl2"></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border:2px solid; text-align: center; height:50px;">
+                                                    <label class="txt2 lbl2"></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border:2px solid; text-align: center; height:50px;">
+                                                    <label class="txt2 lbl2"></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border:2px solid; text-align: center; height:50px;">
+                                                    <label class="txt2 lbl2"></label>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <div class="holder dropzone" style="padding:0;width:208px !important;height:100%;">
+                            <table id="divSecondDropz" style="height:100%;width:100%; border-collapse: collapse; border:1px solid;">
+
+                                <tr>
+                                    <td style="border:2px solid; text-align: center; height:30px;">
+                                        <input type="text" class="txt2 txt3">
+                                        <span onclick="clearText(0)" style="cursor: pointer;">X</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border:2px solid; text-align: center; height:30px;">
+                                        <input type="text" class="txt2 txt3">
+                                        <span onclick="clearText(1)" style="cursor: pointer;">X</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border:2px solid; text-align: center; height:30px;">
+                                        <input type="text" class="txt2 txt3">
+                                        <span onclick="clearText(2)" style="cursor: pointer;">X</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border:2px solid; text-align: center; height:30px;">
+                                        <input type="text" class="txt2 txt3">
+                                        <span onclick="clearText(3)" style="cursor: pointer;">X</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border:2px solid;  text-align: center; height:30px;">
+                                        <input type="text" class="txt2 txt3">
+                                        <span onclick="clearText(4)" style="cursor: pointer;">X</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border:2px solid; text-align: center; height:50px;">
+                                        <input type="text" class="txt2 txt3">
+                                        <span onclick="clearText(5)" style="cursor: pointer;">X</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- Instructions -->
+        <div class="instr" style="position:absolute; top:30%;left:50.5%;display:none;" id="msg">
+            <span style="text-align: justify;"><b>Single click to place<br>in textboxes and double<br>click to view
+                    info.</b></span>
+        </div>
+        <div class="full" style="width:85%;">
+            <div class="choices" style=" width:auto; margin-top:195px;margin-left:687px;">
+                <div class="container">
+                    <div class="choicesSalient" id="divSalient" style="display:none;">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div style="cursor:pointer;" onclick="insertFeature(this.firstChild.data,'oligochaeta');"
+                                        ondblclick="alertifyData(this,6);">Setae are locomotary organs.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style="cursor:pointer;" onclick="insertFeature(this.firstChild.data,'opisthopora');"
+                                        ondblclick="alertifyData(this,4);">They are terrestrial habitat.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style="cursor:pointer;" onclick="insertFeature(this.firstChild.data,'animalia');"
+                                        ondblclick="alertifyData(this,3);">They are heterotrophic organism.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style="cursor:pointer;" onclick="insertFeature(this.firstChild.data,'animalia');"
+                                        ondblclick="alertifyData(this,5);">Body is multi cellular.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style="cursor:pointer;" onclick="insertFeature(this.firstChild.data,'oligochaeta');"
+                                        ondblclick="alertifyData(this,2);">Few number of setae are present.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style="cursor:pointer;" onclick="insertFeature(this.firstChild.data,'animalia');"
+                                        ondblclick="alertifyData(this,7);">Body made up of eukaryotic cells.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style="cursor:pointer;" onclick="insertFeature(this.firstChild.data,'annelida');"
+                                        ondblclick="alertifyData(this,1);">Body is metamerically segmented.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style="cursor:pointer;" onclick="insertFeature(this.firstChild.data,'opisthopora');"
+                                        ondblclick="alertifyData(this,8);">Body posses paired testis.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style="cursor:pointer;" onclick="insertFeature(this.firstChild.data,'posthuma');"
+                                        ondblclick="alertifyData(this,11);">Pygidium is present.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style="cursor:pointer;" onclick="insertFeature(this.firstChild.data,'pheretima');"
+                                        ondblclick="alertifyData(this,9);">Body is brown in color.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style="cursor:pointer;" onclick="insertFeature(this.firstChild.data,'posthuma');"
+                                        ondblclick="alertifyData(this,10);">Germinal zone present in front of pygidium.
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style="cursor:pointer;" onclick="insertFeature(this.firstChild.data,'posthuma');"
+                                        ondblclick="alertifyData(this,13)">Prostomium is present.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style="cursor:pointer;" onclick="insertFeature(this.firstChild.data,'posthuma');"
+                                        ondblclick="alertifyData(this,14);">Body made up of 100-120 metameres</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style="cursor:pointer;" onclick="insertFeature(this.firstChild.data,'pheretima');"
+                                        ondblclick="alertifyData(this,12);">Clitellum is present on segments number 14
+                                        to 16.</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="nextBtn" style="display:none;">
+                        <input style="border:2px solid black;" onclick="nxtStep(this);" type="button" class="btnNxtStep"
+                            value="Next Step">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn_div" style="text-align:center;">
+            <input type="button" class="btnSubmit" onclick="checkSalients();" value="Submit">
+        </div>
+    </div>
+    <!-- Div Third -->
+
+    <!-- Hidden button for dummy popup click !!! # DO NOT REMOVE # !!! -->
+    <button id="myBtn" style="display:none;">Open Modal</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close"> X </span>
+            <div class="modal-header">
+            </div>
+            <div class="modal-body" style="text-align:center;">
+                <img src="" style="height:550px; width:850px;" id="mdlImg" />
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/index.js"></script>
+    
+</body>
+
+</html>

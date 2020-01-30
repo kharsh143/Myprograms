@@ -1,0 +1,352 @@
+body {
+    width: 100% !important;
+}
+
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropzone {
+    height: 430px;
+    width: 120px;
+    padding: 20px;
+    background-color: #ccc;
+    border: 2px solid black;
+    width: 75%;
+    position: relative;
+}
+
+.cntr {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.spn {
+    border: 1px solid black;
+}
+
+#tblMain tr td:nth-child(1) {
+    border: 1px solid black;
+}
+
+.holder2 {
+    height: 340px;
+    width: 100%;
+}
+
+.holder .box {
+    text-align: center;
+    padding: 25px 0;
+    border-radius: 50%;
+    height: 10px;
+    width: 120px;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+}
+
+.choices {
+    height: 340px;
+    width: 100%;
+}
+
+.holder2 .box {
+    text-align: center;
+    padding: 25px 0;
+    border-radius: 50%;
+    height: 10px;
+    width: 120px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.holder2 .box {
+    position: relative;
+}
+
+.holder2 .box:nth-child(1) {
+    left: 10%;
+    top: 7%;
+}
+
+.holder2 .box:nth-child(2) {
+    left: 2%;
+    top: 20%;
+}
+
+.holder2 .box:nth-child(3) {
+    left: 28%;
+    top: -40%;
+}
+
+.holder2 .box:nth-child(4) {
+    left: 25%;
+    top: -25%;
+}
+
+.holder2 .box:nth-child(5) {
+    left: 50%;
+    top: -40%;
+}
+
+.holder2 .box:nth-child(6) {
+    left: 45%;
+    top: -95%;
+}
+
+.txt2 {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+
+.choicesSalient {
+    height: 300px;
+    width: 250px;
+    border: 2px solid black;
+    overflow-y: scroll;
+}
+
+.choicesSalient table {
+    position: relative;
+    height: 90%;
+}
+
+.choicesSalient table td {
+    width: 100%;
+    padding: 8px;
+}
+
+.btnNxtStep {
+    width: 255px;
+    color: white;
+    background-color: #2aa876;
+}
+
+.btn_div {
+    width: 98.6%;
+    padding: 0px;
+}
+
+.btnSubmit {
+    /* float:right; */
+    height: 40px;
+    width: 120px;
+    background: #2aa876;
+    cursor: pointer;
+}
+
+.reset_btn {
+    width: 150px;
+    height: 40px;
+    background-color: #2aa876;
+}
+
+/* 11/02/2019 */
+
+/* Universal selector for all the buttons */
+
+input[type="button"] {
+    border: none;
+    border-radius: 1px;
+}
+
+.imgPointer {
+    height: 200px !important;
+    width: 200px !important;
+    position: absolute;
+    top: 30%;
+    left: 85%;
+}
+
+.imgtag {
+    height: 299px;
+    width: 280px;
+    position: absolute;
+    z-index: -1;
+    top: 2%;
+    left: 65%;
+}
+
+.yes {
+    width: 70px;
+    height: 40px;
+    position: absolute;
+    background: #2aa876;
+    border-radius: 50% !important;
+}
+
+.yes:nth-child(1) {
+    top: 40%;
+    left: 70%;
+}
+
+.yes:nth-child(2) {
+    top: 40%;
+    left: 78%;
+}
+
+
+/* For the dropdown modal box */
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 20px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    /* For nozilla */
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+  /* The Close Button */
+  .close {
+    color: black;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-header {
+    padding: 2px 16px;
+    background-color: white !important;
+    color: white;
+  }
+
+  .modal-body {padding: 30px 16px;}
+
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+
+/* 17/02/2019 */
+
+
+  .yesno {
+    position: absolute;
+    top: 45%;
+    left: 75%;
+}
+
+.yesno input,
+.calc {
+    border: 1px solid #000;
+    width: 70px;
+    height: 40px;
+    background: #2aa876;
+}
+.ertImg{
+  height:90px;
+  width:100%;
+  position:absolute;
+  z-index:-1;
+  top: 2%;
+  Right: 0%;
+}
+.ertImg img{
+  height:200px;
+  width:200px;
+  border-radius: 10%;
+  float:right;
+  }
+  #b1 {
+    height: 25px;
+    width: 55px;
+}
+
+#b2 {
+    height: 25px;
+    width: 55px;
+}
+
+#b3 {
+    height: 25px;
+    width: 55px;
+}
+
+#b4 {
+    height: 25px;
+    width: 55px;
+}
+
+#TextArea {
+    border: black solid 3px;
+    height: 50px;
+    width: 250px;
+}
+
+#h {
+    font-size: 40px;
+}
+
+#b1 {
+    border: black solid 2px;
+    background-color: #00cc66;
+    height: 40px;
+    width: 770px;
+    font-size: 30px;
+}
+
+#c1 {
+    background-color: blue;
+}
+
+#b1 {
+    border: black solid 2px;
+    background-color: #00cc66;
+    font-size: 30px;
+}
+
+.row {
+    width: 100%;
+    margin: 0px;
+}
