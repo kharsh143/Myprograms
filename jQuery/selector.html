@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<script src="jquery-3.5.1.min.js"></script>
+<script >
+    $(document).ready(function(){
+        $('h1').fadeOut(3500);
+        $('h1').fadeIn(2000)
+        $('#first').click(function(){
+            alert('Div Clicked')
+        });
+        $('.msg').slideUp(2000)
+    });
+</script>
+<body>
+    <h1>H1 tag</h1>
+    <div id="first">This is Div</div>
+    <div class="msg">Second Div</div>
+</body>
+</html>
